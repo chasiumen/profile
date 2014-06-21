@@ -8,6 +8,16 @@ user='morinor'
 /bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
 /bin/cp -f  ./conf/.bashrc /home/$user/.bashrc
 
+
+#Vim
+#install vim
+/usr/bin/yum install -y vim
+
+#copy vim profile
+/bin/cp -f ./conf/.vimrc /home/$user/.vimrc
+
+
+
 #cp authorized_keys
 /bin/cp -f ./conf/authorized_keys /home/$user/.ssh/
 
