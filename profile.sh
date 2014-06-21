@@ -7,15 +7,14 @@ user='morinor'
 #copy bash profile
 /bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
 /bin/cp -f  ./conf/.bashrc /home/$user/.bashrc
-
+source /home/$user/.bashrc
 
 #Vim
 #install vim
-/usr/bin/yum install -y vim
+sudo /usr/bin/yum install -y vim
 
 #copy vim profile
 /bin/cp -f ./conf/.vimrc /home/$user/.vimrc
-
 
 
 #cp authorized_keys
