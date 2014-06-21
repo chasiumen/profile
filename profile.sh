@@ -7,7 +7,6 @@ user='morinor'
 #copy bash profile
 /bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
 /bin/cp -f  ./conf/.bashrc /home/$user/.bashrc
-source /home/$user/.bashrc
 
 #Vim
 #install vim
