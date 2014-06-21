@@ -1,11 +1,16 @@
 #!/bin/bash -x
+user='morinor'
 
 #make bin directory
-/bin/mkdir /home/morinor/bin
+/bin/mkdir /home/$user/bin
 
 #copy bash profile
-/bin/cp /home/morinor/.bashrc /home/morinor/.bashrc.old
-/bin/cp -f  ./conf/.bashrc /home/morinor/.bashrc
+/bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
+/bin/cp -f  ./conf/.bashrc /home/$user/.bashrc
 
 #cp authorized_keys
-/bin/cp -f ./conf/authorized_keys /home/morinor/.ssh/
+/bin/cp -f ./conf/authorized_keys /home/$user/.ssh/
+
+#set permission
+/bin/chmod 700 /home/$user/.ssh
+/bin/chmod 600 /home/$user/.ssh/authorized_keys
