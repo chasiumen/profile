@@ -20,4 +20,5 @@ user='morinor'
 #set permission
 /bin/chmod 700 /home/$user/.ssh
 /bin/chmod 600 /home/$user/.ssh/authorized_keys
-
+/bin/chown -R $user:$user /home/$user/.ssh
+/bin/chown -R $user:$user /home/$user/bin
