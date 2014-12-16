@@ -3,6 +3,7 @@ user='morinor'
 
 #make bin directory
 /bin/mkdir /home/$user/bin
+/bin/mkdir /home/$user/.ssh
 
 #copy bash profile
 /bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
