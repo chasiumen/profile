@@ -20,4 +20,3 @@ user='morinor'
 #set permission
 /bin/chmod 700 /home/$user/.ssh
 /bin/chmod 600 /home/$user/.ssh/authorized_keys
-
