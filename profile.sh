@@ -9,8 +9,9 @@ user='morinor'
 /bin/cp $HOME/.bashrc $HOME/.bashrc.old
 /bin/cp -f  ./conf/.bashrc $HOME/.bashrc
 
+#Vim
 #install vim
-/usr/bin/yum install -y vim-enhanced
+sudo /usr/bin/yum install -y vim
 
 #copy vim profile
 /bin/cp -f ./conf/.vimrc /home/$user/.vimrc
