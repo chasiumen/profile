@@ -2,11 +2,12 @@
 user='morinor'
 
 #make bin directory
-/bin/mkdir /home/$user/bin
+#/bin/mkdir /home/$user/bin
+/bin/mkdir $HOME/bin
 
 #copy bash profile
-/bin/cp /home/$user/.bashrc /home/$user/.bashrc.old
-/bin/cp -f  ./conf/.bashrc /home/$user/.bashrc
+/bin/cp $HOME/.bashrc $HOME/.bashrc.old
+/bin/cp -f  ./conf/.bashrc $HOME/.bashrc
 
 #install vim
 /usr/bin/yum install -y vim-enhanced
